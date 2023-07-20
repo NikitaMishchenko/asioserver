@@ -48,6 +48,8 @@ private:
     {
         std::cout << "handling new connection, errCode: " << error << "\n";
 
+        // https://stackoverflow.com/questions/66113904/boost-asio-getting-error-code-125-operation-cancelled
+
         if (error)
         {
             return;
